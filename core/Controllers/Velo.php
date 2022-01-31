@@ -44,7 +44,7 @@ class Velo extends AbstractController
         ]); }
         
         $modelAvis = new \Models\Avis();
-        $commentaires = $modelAvis->findAllByVelo($velo); // 
+        $avis = $modelAvis->findAllByVelo($velo); // 
 
         $pageTitle = $velo->getName();
 

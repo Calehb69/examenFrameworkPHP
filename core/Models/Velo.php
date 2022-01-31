@@ -62,8 +62,8 @@ class Velo extends AbstractModel
      */
     public function save(Velo $velo):void 
     {
-                  $sql = $this->pdo->prepare("INSERT INTO {$this->nomDeLaTable} 
-             (name, ,description, image, price) VALUES (:nom, , :description, :image, :price)
+            $sql = $this->pdo->prepare("INSERT INTO {$this->nomDeLaTable} 
+             (name, description, image, price) VALUES (:nom, :description, :image, :price)
             ");
 
             $sql->execute([
