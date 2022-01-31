@@ -48,7 +48,7 @@ class Velo extends AbstractController
 
         $pageTitle = $velo->getName();
 
-        $this->render("velos/show", compact("pageTitle", "velo", "commentaires"));
+        $this->render("velos/show", compact("pageTitle", "velo", "avis"));
 
   }
 
@@ -89,20 +89,20 @@ class Velo extends AbstractController
     {
         
 
-        $name = null;
-        $description = null;
+        $name=null;
+        $description=null;
         $image=null;
         $price=null;
 
-        if(!empty($_POST['name'])){ $nom = $_POST['name'] ; }
-        if(!empty($_POST['description'])){ $nom = $_POST['description'] ; }
+        if(!empty($_POST['name'])){ $name = $_POST['name'] ; }
+        if(!empty($_POST['description'])){ $description = $_POST['description'] ; }
         if(!empty($_POST['image'])){ $image = $_POST['image'] ; }
-        if(!empty($_POST['price'])){ $ingredients = $_POST['price'] ; }
+        if(!empty($_POST['price'])){ $price = $_POST['price'] ; }
 
         if( $name && $description && $image && $price ){
 
                 $velo = new \Models\Velo();
-                $velo->setName($nom);
+                $velo->setName($name);
                 $velo->setDescription($description);
                 $velo->setImage($image);
                 $velo->setPrice($price);

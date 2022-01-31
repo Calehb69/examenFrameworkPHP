@@ -13,7 +13,7 @@ abstract class AbstractController
 
         public function __construct()
                 {
-                                    //new \Models\Cocktail()
+                                    //new \Models\Velo()
                 $this->defaultModel= new $this->defaultModelName();
 
                 }

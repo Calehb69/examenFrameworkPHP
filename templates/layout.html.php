@@ -13,7 +13,7 @@
 <nav class="navbar nav-expand-lg navbar-light bg-dark mb-5"><a href="/Back-end/magasinvelo" class="navbar-brand">HOME</a>
     <ul>
         <li class="nav-item"><a href="?type=velo&action=index&id=" class="btn btn-primary">Voir les vélos</a></li>
-        <li class="nav-item"><a href="?type=velo&action=new&id=" class="btn btn-primary">Ajouter un vélo</a></li>
+        <li class="nav-item"><a href="?type=velo&action=new" class="btn btn-primary">Ajouter un vélo</a></li>
     </ul>
 </nav>
 
