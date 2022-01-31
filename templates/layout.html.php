@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,10 +10,25 @@
 </head>
 <body>
 
-<nav class="navbar nav-expand-lg navbar-light bg-dark mb-5"><a href="/Back-end/baseframework" class="navbar-brand">HOME</a>
+<nav class="navbar nav-expand-lg navbar-light bg-dark mb-5"><a href="/Back-end/magasinvelo" class="navbar-brand">HOME</a>
+    <ul>
+        <li class="nav-item"><a href="?type=velo&action=index&id=" class="btn btn-primary">Voir les vélos</a></li>
+        <li class="nav-item"><a href="?type=velo&action=new&id=" class="btn btn-primary">Ajouter un vélo</a></li>
+    </ul>
+</nav>
 
+<div class="alert alert-warning alert-dismissible fade <?php if($_GET['info']=='errDel'){ echo"show";}?>" role="alert">
+  <strong>Erreur</strong> Je n'ai pas pu supprimer cet élément car il n'existe pas, petit malin.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<div class="alert alert-warning alert-dismissible fade <?php if($_GET['info']=='noId'){ echo"show";}?>" role="alert">
+  <strong>Erreur</strong> cet élément n'existe pas, petit malin.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<div class="container">
+            
 
-<?=  $pageContent ?>
+            <?=  $pageContent ?>
 
 
 </div>
