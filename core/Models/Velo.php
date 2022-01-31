@@ -73,4 +73,5 @@ class Velo extends AbstractModel
                 'price'=>$velo->price
             ]);
     }
+
 }

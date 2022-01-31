@@ -11,9 +11,9 @@
   <p><?= $velo->getDescription() ?><p>
   <hr>
   <h2>Tarifs :</h2>
-  <p><?= $velo->getPrice() ?></p>
+  <p><?= $velo->getPrice() ?> €</p>
 
-  <a href="?type=cocktail&action=show&id=<?= $velo->getId() ?>" class="btn btn-primary">Voir +</a>
+  <a href="?type=velo&action=show&id=<?= $velo->getId() ?>" class="btn btn-primary">Voir +</a>
 
 </div>
 
