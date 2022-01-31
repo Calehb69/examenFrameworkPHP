@@ -120,8 +120,4 @@ class Velo extends AbstractController
         return $this->render("velos/create", ["pageTitle"=>'Nouveau vélo']);
     }
 
-
-
-
-
 }
